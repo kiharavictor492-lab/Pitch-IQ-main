@@ -25,6 +25,9 @@ from telegram.ext import (
 )
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import pytz
+import os
+from flask import flask
+import threading
 
 from config import (
     TELEGRAM_BOT_TOKEN, FREE_CHANNEL_ID, ADMIN_CHAT_IDS,
@@ -908,6 +911,16 @@ async def cmd_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
     await update.message.reply_text(msg, parse_mode="HTML")
 
+# ---------------------------------------------------------
+# Health check server (keep Render's scan happy)
+#-----------------------------------------------------------
+flask_app = Flask(__name__)
+@flask_app.route('/')
+def health():
+  return "PitchIQ Bot is running" , 200
+def run_flask():
+  port = int(os.environ.get("PORT", 2=10000))
+  flask_app.run(host='0.0.0.0', port=port)
 
 # ══════════════════════════════════════════════════════════════════════════════
 # Main
@@ -916,6 +929,7 @@ async def cmd_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
 def main():
     init_db()
     logger.info("🚀 Starting PitchIQ Bot…")
+    threading.Thread(target=run_flask, daemon=True).start()
 
     app = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
 
