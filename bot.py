@@ -26,7 +26,7 @@ from telegram.ext import (
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import pytz
 import os
-from flask import flask
+from flask import Flask
 import threading
 
 from config import (
