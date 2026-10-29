@@ -37,11 +37,11 @@ TRACKED_LEAGUE_CODES = [
 
 # ─── M-Pesa Daraja ───────────────────────────────────────────────────────────
 # Get these from: https://developer.safaricom.co.ke
-MPESA_ENV             = "sandbox"       # Change to "production" when going live
-MPESA_CONSUMER_KEY    = "ekix8AVLAE0GPBvKexeDnVFAUbGn7mo5aPiudzKJzHYMp6JH"
-MPESA_CONSUMER_SECRET = "W7puYgPb0K2kX6ISndvqIg1hjECGGws5QUSY5GmblMiY3kw9o7cZd2Um8GglfW8v"
-MPESA_SHORTCODE       = "174379"        # Sandbox shortcode (replace with yours in production)
-MPESA_PASSKEY         = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919"
+MPESA_ENV             = "Production"       # Change to "production" when going live
+MPESA_CONSUMER_KEY    = "f38r7FiB5IzKxbbbHyNBS7es3A3aL3TYXGXZQj1kX7CIlLXJ"
+MPESA_CONSUMER_SECRET = "kHTzSaFkrw4haMhJSUilDy8QHHeQiLL4QM3ylAkMGAHgsNKQNIzolXYrWoeRsgyE"
+MPESA_SHORTCODE       = "4490158"        # Sandbox shortcode (replace with yours in production)
+MPESA_PASSKEY         = "e9992845c77aa8c47fbe5194c38e0b56f720135017e4f33a29825504bd091c0e"
 MPESA_CALLBACK_URL    = "https://pitch-iq-main.onrender.com"  # Must be public HTTPS URL
 
 #3BL3PG7NwRh5WJlRZbzuD2xRkfB_3DWr1uFBrz7C2ZMyHNQC4
