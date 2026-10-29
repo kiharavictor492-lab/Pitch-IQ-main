@@ -40,8 +40,8 @@ TRACKED_LEAGUE_CODES = [
 MPESA_ENV             = "sandbox"       # Change to "production" when going live
 MPESA_CONSUMER_KEY    = "ekix8AVLAE0GPBvKexeDnVFAUbGn7mo5aPiudzKJzHYMp6JH"
 MPESA_CONSUMER_SECRET = "W7puYgPb0K2kX6ISndvqIg1hjECGGws5QUSY5GmblMiY3kw9o7cZd2Um8GglfW8v"
-MPESA_SHORTCODE       = "174379"        # Sandbox shortcode (replace with yours in production)
-MPESA_PASSKEY         = "IvYhxT6rXEdi8/TahVVYRBTII3QihXkd8cVI3s2xSUeWXd6V7R+09T/NEF93orlwM9nVw3C4HLrU1ZSkSu+E+ofA820U9AVSyVLyB3zishorDlsdiEaAR+heHLg4V/Wl21OT/x5aOZYHxjXSgCI7B9ReMbalJ4VUnENzII5qUuesnJMHtzLRbPPzO3puK5GVEt466su/3rVJNxCKVlRsYBuCeNCfeYdmR2Hu7q0MpmhyD/QRpNWa3izpfdQ0IX7fjF6kN/MwpstzHYdxHNH09HIFo9nJFr43O9SvA8BkxA5rGREQwl7CYwg/BmanW+++2XzmN4939u5cBXsY40JPfA=="
+MPESA_SHORTCODE       = "4490158"        # Sandbox shortcode (replace with yours in production)
+MPESA_PASSKEY         = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919"
 MPESA_CALLBACK_URL    = "https://pitch-iq-main.onrender.com"  # Must be public HTTPS URL
 
 #3BL3PG7NwRh5WJlRZbzuD2xRkfB_3DWr1uFBrz7C2ZMyHNQC4
