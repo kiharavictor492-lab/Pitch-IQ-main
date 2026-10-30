@@ -64,7 +64,7 @@ def stk_push(phone: str, user_id: int) -> dict:
         "BusinessShortCode": MPESA_SHORTCODE,
         "Password":          pwd,
         "Timestamp":         ts,
-        "TransactionType":   "CustomerPayBillOnline",
+        "TransactionType": "CustomerBuyGoodsOnline",
         "Amount":            SUBSCRIPTION_AMOUNT,
         "PartyA":            phone,
         "PartyB":            MPESA_SHORTCODE,
